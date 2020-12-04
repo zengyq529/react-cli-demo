@@ -1,0 +1,2 @@
+- 坑点
+  -webpack-cli 3.0上需要webpack serve 而不是直接用webpack-dev-server。
