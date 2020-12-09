@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react'
-import AsyncApp from './components/AsyncApp'
+import React from 'react'
+import AsyncApp from './AsyncApp'
 import configureStore from './model/configureStore'
 import { Provider } from 'react-redux'
 const store = configureStore()
@@ -8,7 +8,7 @@ const store = configureStore()
 const DemoPage = () => {
   return (
     <Provider store={store}>
-      <h1>redux 高级完整例子</h1>
+      <h1>redux demo</h1>
       <AsyncApp></AsyncApp>
     </Provider>
   )
