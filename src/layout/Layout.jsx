@@ -1,13 +1,13 @@
 import React from 'react'
 import { Route } from 'react-router'
-import DemoPage from '../pages/demopage/Index'
+import SagaDemo from '../pages/sagedemo/Index'
 
 const Layout = (props) => {
   console.log('layout')
   return (
     <div>
       layout
-      <Route path='/' component={DemoPage}></Route>
+      <Route path='/' component={SagaDemo}></Route>
     </div>
   )
 }

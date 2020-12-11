@@ -1,4 +1,7 @@
-export default function counter(state = 0, action) {
+
+import { combineReducers } from 'redux';
+
+function count(state = 1, action) {
   switch (action.type) {
     case 'INCREMENT':
       return state + 1
@@ -10,3 +13,23 @@ export default function counter(state = 0, action) {
       return state
   }
 }
+
+
+
+
+const list = (state = [], { list, type }) => {
+  switch (type) {
+    case 'GET_LIST':
+      return list
+    default:
+      return state
+  }
+};
+
+
+const rootReducer = combineReducers({
+  list,
+  count
+})
+
+export default rootReducer;
