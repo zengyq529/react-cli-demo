@@ -1,6 +1,5 @@
 import fetch from "cross-fetch";
-
-
+ 
 export function selectChange(selectValue) {
 
   return (dispatch, getState, params) => { // params 是第三参数从 thunk 初始化的时候传入的。 参考https://github.com/reduxjs/redux-thunk
