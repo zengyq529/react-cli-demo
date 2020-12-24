@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`分组2 快照 1`] = `
+Object {
+  "port": 8080,
+  "server": "localhost",
+}
+`;
+
+exports[`分组2 快照1 1`] = `
+Object {
+  "port": 8080,
+  "server": "localhost",
+}
+`;
+
+exports[`分组2 快照2 1`] = `
+Object {
+  "latest": Any<Date>,
+  "port": 8080,
+  "server": "localhost",
+}
+`;
