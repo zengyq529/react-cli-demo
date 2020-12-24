@@ -2,25 +2,30 @@
 
 
 export function sum(...args) {
-  let res = args.reduce((accumulator, current)=>accumulator+current) 
+  let res = args.reduce((accumulator, current) => accumulator + current)
   return res
 }
 
 
-export class Counter{
-  constructor(){
+export class Counter {
+  constructor() {
     this.count = 1;
   }
-  add(){
+  add() {
     this.count += 1;
   }
-  minus(){
+  minus() {
     this.count -= 1;
   }
 }
- 
 
-export function runCbDemo(cb){
+
+
+export function runCbDemo(cb) {
   // 业务代码
   cb && cb('ahga')
 }
+
+
+
+
