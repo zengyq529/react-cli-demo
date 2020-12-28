@@ -26,6 +26,12 @@ export function runCbDemo(cb) {
   cb && cb('ahga')
 }
 
+import fetch from "cross-fetch";
+
+export function fetchDataDemo() {
+  return fetch(`https://www.reddit.com/r/reactjs.json`)
+}
 
 
 
+ 

@@ -1,3 +1,5 @@
+
+
 // 用来生成配置文件
 function generateConfig() {
   return {
@@ -44,3 +46,23 @@ describe("分组3", () => {
     `);  // `inline 快照`
   });
 });
+
+
+
+jest.mock('./demo') //在 __mocks__ 下创建demo的文件
+//jest.unmock('./demo');
+// jest.config.js    automock: false/true 总开关,
+import { fetchDataDemo } from './demo' //从mock来
+const {sum} = jest.requireActual('./demo') //从真实文件中来。
+describe('测试mock', () => { 
+  test('should 深入mock', () => {
+    expect(sum(1,2)).toEqual(3)
+
+    return fetchDataDemo().then(data => {
+      expect(eval(data)).toEqual(123)
+    })
+  })
+
+})
+
+
