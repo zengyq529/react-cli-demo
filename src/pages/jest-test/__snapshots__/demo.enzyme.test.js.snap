@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enzyme test enzyme2 1`] = `
+<App>
+  <div
+    data-test="container"
+    id="app"
+    onClick={[Function]}
+  >
+    <div
+      className="class-name"
+      title="hhh"
+    />
+    0
+  </div>
+</App>
+`;
