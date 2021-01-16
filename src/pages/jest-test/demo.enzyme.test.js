@@ -25,5 +25,4 @@ describe('enzyme test', () => {
     expect(wrapper).toMatchSnapshot() //如果对展示敏感的测试可以使用快照
   })
 
-
 })
