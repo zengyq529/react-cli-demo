@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`enzyme test enzyme 受控组件 模拟用户行为 验证受控组件能力 1`] = `
+<App
+  onChange={[Function]}
+  value="123"
+>
+  <div
+    data-test="container"
+    id="app"
+    onClick={[Function]}
+  >
+    <div
+      className="class-name"
+      title="hhh"
+    />
+    <input
+      onChange={[Function]}
+      value="123"
+    />
+    0
+  </div>
+</App>
+`;
+
+exports[`enzyme test enzyme 快照，希望样式不被改变 1`] = `ShallowWrapper {}`;
+
+exports[`enzyme test enzyme 测试封装 1`] = `ShallowWrapper {}`;
+
 exports[`enzyme test enzyme2 1`] = `
 <App>
   <div

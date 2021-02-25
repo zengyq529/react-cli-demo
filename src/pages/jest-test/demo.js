@@ -23,7 +23,7 @@ export class Counter {
 
 export function runCbDemo(cb) {
   // 业务代码
-  cb && cb('ahga')
+  cb && cb('cbdata')
 }
 
 import fetch from "cross-fetch";

@@ -50,6 +50,4 @@ describe('分组demo', () => {
     document.body.id = 'c1';
     expect(document.body.id).toBe('c1');
   })
-
-
 })

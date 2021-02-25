@@ -1,17 +1,15 @@
 import fetch from "cross-fetch";
 
-export function fetchList2() {
-  return fetch(`https://www.reddit.com/r/reactjs.json`)
-}
-
 export function fetchList() {
-  return fetch(`https://www.reddit.com/r/reactjs.json`).then(response => response.json()).then(data => data)
+  return new Promise((resolve) => {
+    resolve({ a: 1, b: 2 });
+  })
 }
 
 export function fetchListCallback(cb) {
-  fetch(`https://www.reddit.com/r/reactjs.json`).then(response => response.json()).then(cb)
+  cb({ a: 1, b: 2 });
 }
 
 export function fetchList404() {
-  return fetch(`https://aa.vv.com/aa`).then(response => response.json())
+  return fetch(`https://www.alibaba.com/aa`).then(response => response.json())
 }
